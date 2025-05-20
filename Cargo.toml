@@ -1,8 +1,12 @@
 [package]
 name = "zlearn"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
+description = "A simple neural network implementation library in Rust"
+license = "MIT"
+repository = "https://github.com/your-username/rust-neural-network"
+keywords = ["neural-network", "machine-learning", "rust"]
+categories = ["science"]
 
 [dependencies]
 rand = "0.9.1"
-
