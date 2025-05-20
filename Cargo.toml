@@ -1,10 +1,10 @@
 [package]
 name = "zlearn"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 description = "A simple neural network implementation library in Rust"
 license = "MIT"
-repository = "https://github.com/your-username/rust-neural-network"
+repository = "https://github.com/GrishmUmesh/zlearn"
 keywords = ["neural-network", "machine-learning", "rust"]
 categories = ["science"]
 
