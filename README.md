@@ -1,3 +1,16 @@
+# zlearn
+
+**zlearn** is a simple neural network library written in Rust, designed to offer both simplicity and high-level control to the user.
+
+## Features
+
+- **High user control**  
+- **Matrix class included**  
+- **Backpropagation and feedforward support**  
+
+## XOR Example
+
+```rust
 use zlearn::activation::SIGMOID;
 use zlearn::network::Network;
 
