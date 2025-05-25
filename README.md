@@ -2,9 +2,9 @@
 A simple neural network library in rust, designed for simplicity and higher control to the user.
 
 ## Features
-**Builtin activation functions**        
-**Builtin Matrices**        
-**Backpropogation**     
+**High user control**  
+**Matrix class included**  
+**Backpropogation and feed forward included**  
 
 ## XOR Example
 ```
@@ -13,13 +13,13 @@ use zlearn:network::Network;
 
 fn main() {
     // XOR input and target data
-    let inputs = vec![
+    let data_in = vec![
         vec![0.0, 0.0],
         vec![0.0, 1.0],
         vec![1.0, 0.0],
         vec![1.0, 1.0],
     ];
-    let targets = vec![
+    let data_out = vec![
         vec![0.0],
         vec![1.0],
         vec![1.0],
@@ -30,7 +30,7 @@ fn main() {
     let mut network = Network::new(vec![2, 2, 1], SIGMOID, 0.5);
 
     // Train the network for 10,000 epochs
-    network.train(inputs.clone(), targets, 10000);
+    network.train(data_in.clone(), data_out.clone(), 10000);
 
     // Test the network
     println!("\nTesting XOR after training:");
